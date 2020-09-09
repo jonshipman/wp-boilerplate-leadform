@@ -21,4 +21,4 @@ if ( ! function_exists( 'wp_boilerplate_leadform_settings' ) ) {
 	}
 }
 
-add_filter( 'headless_wp_settings', 'wp_boilerplate_leadform_settings' );
+add_filter( 'wp_boilerplate_nodes_settings', 'wp_boilerplate_leadform_settings' );
