@@ -25,11 +25,11 @@ add_action(
 
 		// Require based on if WP-GraphQL is installed.
 		if ( function_exists( 'register_graphql_field' ) ) {
-			require_once 'includes/types.php';
-			require_once 'includes/resolvers.php';
-			require_once 'includes/mutations.php';
-			require_once 'includes/actions.php';
-			require_once 'includes/settings.php';
+			require_once __DIR__ . '/includes/types.php';
+			require_once __DIR__ . '/includes/resolvers.php';
+			require_once __DIR__ . '/includes/mutations.php';
+			require_once __DIR__ . '/includes/actions.php';
+			require_once __DIR__ . '/includes/settings.php';
 		}
 	},
 	11
