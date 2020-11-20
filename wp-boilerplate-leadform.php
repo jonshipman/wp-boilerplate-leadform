@@ -34,3 +34,11 @@ add_action(
 	},
 	11
 );
+
+function wp_bolierplate_leadform_after_setup_theme() {
+	if ( ! class_exists( 'HeadlessWpSettings' ) ) {
+		require_once __DIR__ . '/includes/settings-init.php';
+	}
+}
+
+add_action( 'after_setup_theme', 'wp_bolierplate_leadform_after_setup_theme' );
