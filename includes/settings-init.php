@@ -30,8 +30,8 @@ class HeadlessWpSettings {
 	// Create the admin menu.
 	public function admin_menu() {
 		add_options_page(
-			apply_filters( 'wp_boilerplate_nodes_settings_page_label', __( 'Headless Theme Settings', 'wp-boilerplate-nodes' ) ),
-			apply_filters( 'wp_boilerplate_nodes_settings_menu_label', __( 'Headless Theme', 'wp-boilerplate-nodes' ) ),
+			apply_filters( 'wp_boilerplate_nodes_settings_page_label', __( 'Leadform Settings', 'wp-boilerplate-nodes' ) ),
+			apply_filters( 'wp_boilerplate_nodes_settings_menu_label', __( 'Leadform', 'wp-boilerplate-nodes' ) ),
 			'manage_options',
 			$this->get_key(),
 			array( $this, 'display_options_page' )
